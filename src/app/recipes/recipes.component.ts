@@ -9,7 +9,7 @@ import { Recipe } from './recipe.model';
 export class RecipesComponent implements OnInit {
   selectedRecipe : Recipe;
   constructor() { 
-    this.selectedRecipe=new Recipe('','','');
+
   }
 
   ngOnInit(): void {
