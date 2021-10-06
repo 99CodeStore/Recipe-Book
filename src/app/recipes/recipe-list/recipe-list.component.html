@@ -20,7 +20,10 @@
                 <img class="img-responsive" [src]="recp.imageUrl" alt="{{ recp.name }}" style="max-height: 100px;" />
             </div>
         </a>
-        <app-recipe-item></app-recipe-item>
+        <app-recipe-item *ngFor="let recipeEl of repices"
+        [recipe]="recipeEl"
+        (recipeSelected)="onRecipeSelected(recipeEl)"
+        ></app-recipe-item>
     </div>
 </div>
 
